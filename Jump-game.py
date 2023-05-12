@@ -21,8 +21,8 @@ class App:
         self.floor = [(i * 60, randint(50, 104), True) for i in range(4)]
         # フルーツの配置
         self.fruit = [(i * 60, randint(0, 104), randint(0, 2), True) for i in range(4)]
-        # BGMの再生
-        pyxel.playm(0, loop=True)
+        # BGMの再生(音でかいのでコメントアウト)
+        #pyxel.playm(0, loop=True)
         # 実行
         pyxel.run(self.update, self.draw)
 
